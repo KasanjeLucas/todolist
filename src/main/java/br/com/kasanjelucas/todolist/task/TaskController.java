@@ -42,6 +42,7 @@ public class TaskController {
                 "A data de início deve ser menor do que a data de término");
         }
 
+
         var task = this.taskRepository.save(taskModel);
         return ResponseEntity.status(HttpStatus.OK).body(task);
     }
